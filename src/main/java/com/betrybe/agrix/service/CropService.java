@@ -1,6 +1,6 @@
 package com.betrybe.agrix.service;
 
-import com.betrybe.agrix.dto.CropDto;
+import com.betrybe.agrix.controller.dto.CropDto;
 import com.betrybe.agrix.entity.Crop;
 import com.betrybe.agrix.entity.Fertilizer;
 import com.betrybe.agrix.exception.CropNotFoundException;

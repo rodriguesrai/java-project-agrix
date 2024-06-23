@@ -1,7 +1,7 @@
 package com.betrybe.agrix.service;
 
-import com.betrybe.agrix.dto.FertilizerCreationDto;
-import com.betrybe.agrix.dto.FertilizerDto;
+import com.betrybe.agrix.controller.dto.FertilizerCreationDto;
+import com.betrybe.agrix.controller.dto.FertilizerDto;
 import com.betrybe.agrix.entity.Fertilizer;
 import com.betrybe.agrix.exception.FertilizerNotFoundException;
 import com.betrybe.agrix.repository.FertilizerRepository;

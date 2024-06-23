@@ -1,4 +1,4 @@
-package com.betrybe.agrix.dto;
+package com.betrybe.agrix.controller.dto;
 
 import com.betrybe.agrix.entity.Crop;
 import java.time.LocalDate;
