@@ -47,6 +47,9 @@ public class SecurityConfig {
             authorize -> authorize
                 .requestMatchers(HttpMethod.POST, "/persons").permitAll()
                 .requestMatchers(HttpMethod.POST, "/auth/login").permitAll()
+                .requestMatchers("/crops").hasAnyAuthority("MANAGER", "ADMIN")
+                .requestMatchers("/farms").hasAnyAuthority("USER", "MANAGER", "ADMIN")
+                .requestMatchers("/fertilizers").hasAnyAuthority("ADMIN")
                 .anyRequest().authenticated()
         )
         .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
