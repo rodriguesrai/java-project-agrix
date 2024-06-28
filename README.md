@@ -1,4 +1,4 @@
-<h1 align="center" style="font-weight: bold;">Footbal Leaderboard</h1>
+<h1 align="center" style="font-weight: bold;">Agrix</h1>
 
 <p align="center">
     <b>O Agrix é uma API RESTful sobre plantações e gerenciamento agrícola! 🌾⚽️</b>
@@ -6,6 +6,7 @@
 <p align="center">
     Nesse projeto, fui responsável por construir um back-end utilizando Spring Boot e JPA para modelagem de dados. O desenvolvimento respeitou regras de negócio providas no projeto e a API RESTful é capaz de ser consumida por um front-end que pode ser desenvolvido separadamente.
 </p>
+
 
 <h2 id="technologies">💻 Principais tecnologias</h2>
 
@@ -16,6 +17,8 @@
 - JWT (JSON Web Token)
 - Mysql
 - Maven
+- Docker
+- Docker-Compose
 
  <b> Para desenvolver os testes: </b>
  
@@ -55,33 +58,19 @@ Aqui estão os principais endpoints da sua API, descrevendo o que cada um faz e 
   <summary>🗄️ 🚀 Getting started</summary><br>
 <h3>Cloning</h3>
 
-Após usar o comando acessar a pasta do projeto para fazer os próximos passos. Obs.: Com a configuração atual do projeto é necessário um database MySql para a aplicação rodar.
+Após usar o comando acessar a pasta do projeto para fazer os próximos passos.
 
 ```bash
 git clone your-project-url-in-github
 ```
 
-<h3>Instalação</h3>
-
-- Para instalar as dependências do projeto, execute:
-
-```bash
-mvn clean install
-```
-
-- Para instalar as dependências do projeto, execute:
-
-```bash
-mvn spring-boot:run
-```
-
 - Utilizando o comando para executar os containers docker através do docker compose
 
 ```bash
-npm run compose:up
+docker-compose -up
 ```
   
-- Para acessar o back-end basta acessar a url http://localhost:8080/
+- Para verificar se o back-end está on, acesse http://localhost:8080/actuator/health.
 </details>
 
 
