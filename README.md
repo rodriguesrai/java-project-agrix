@@ -14,16 +14,12 @@
 <h2 id="technologies">💻 Principais tecnologias</h2>
 
 - Spring Boot
-
-- Sequelize
 - JPA (Java Persistence API)
 - Hibernate
 - Spring Security
 - JWT (JSON Web Token)
+- Mysql
 - Maven
-
-- Bcrypt
-- JWT(JSON web Token)
 
  <b> Para desenvolver os testes: </b>
  
@@ -32,10 +28,9 @@
 
 <details>
   <summary>🗄️ Descrição do banco de dados</summary><br>
-  
-![agrix-tabelas-fase-c](https://github.com/rodriguesrai/project-agrix/images/agrix-tableas-face-c.png)
+![agrix-tabelas-fase-c](images/agrix-tabelas-fase-c.png)
 
-  Nesse modelos, temos as seguintes tabelas:
+  Nesse modelo, temos as seguintes tabelas:
 - `farm`: representa uma fazenda
 - `crop`: representa uma plantação, e está em relacionamento `n:1` ("muitos para um") com a tabela `farm`
 - `fertilizer`: esta nova tabela representa um fertilizante, e está em um relacionamento `n:n` ("muitos para muitos") com a tabela `crop`. Esse relacionamento é realizado através da tabela `crop_fertilizer`.
